@@ -997,7 +997,7 @@ F -> ( E ) | id</textarea>
             </div>
             <div class="game-step-box" id="pumping-step-3">
               <div class="step-num-badge">Step 3</div>
-              <h4>You Choose String $s \in L$ ($|s| \ge p$)</h4>
+              <h4>Chose s belongs L, such that number of elements in s greater than equal to p</h4>
               <div class="input-inline-bar">
                 <input type="text" id="pumping-string-s" class="code-input" value="000111" />
                 <button id="btn-confirm-s" class="btn btn-sm btn-primary">Select s</button>
@@ -1005,20 +1005,20 @@ F -> ( E ) | id</textarea>
             </div>
             <div class="game-step-box" id="pumping-step-4">
               <div class="step-num-badge">Step 4</div>
-              <h4>Adversary Decompositions ($s = xyz$)</h4>
+              <h4>Adversary Decompositions (s = xyz)</h4>
               <select id="pumping-split-select" class="select-full"></select>
               <div id="pumping-split-visual" class="split-visual-box"></div>
             </div>
             <div class="game-step-box full-width-step" id="pumping-step-5">
               <div class="step-num-badge">Step 5</div>
-              <h4>You Choose Pump $i \ge 0$ to Break Condition</h4>
+              <h4>You Choose Pump i greater than equal to 0 to Break Condition</h4>
               <div class="pump-i-row">
-                <label>Select $i$:</label>
+                <label>Select i:</label>
                 <input type="number" id="pumping-i-val" value="2" min="0" max="10" class="num-input" />
-                <button id="btn-test-pump" class="btn btn-primary">⚡ Pump $xy^i z$</button>
+                <button id="btn-test-pump" class="btn btn-primary">⚡ Pump xy<sup>i</sup>z</button>
               </div>
               <div id="pumping-verdict-box" class="pumping-verdict-box">
-                <p class="empty-hint">Choose $i$ and test if pumped string violates the language definition.</p>
+                <p class="empty-hint">Choose i and test if pumped string violates the language definition.</p>
               </div>
             </div>
           </div>
