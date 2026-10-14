@@ -955,8 +955,7 @@ F -> ( E ) | id</textarea>
 
       <!-- TAB 7: PUMPING LEMMA LAB -->
       <section id="tab-pumping" class="tab-panel">
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-        <div class="pumping-lemma-layout">
+         <div class="pumping-lemma-layout">
           <div class="pumping-card intro-card">
             <div class="card-header">
               <h3>The Pumping Lemma Interactive Game</h3>
@@ -966,6 +965,7 @@ F -> ( E ) | id</textarea>
               </span>
             </div>
             <div class="card-body">
+              <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
               <p class="lemma-theorem-box" id="lemma-theorem-text">
                 <strong>Pumping Lemma for Regular Languages:</strong> 
                 If \(L\) is a regular language, then there exists an integer \(p \geq 1\), called the <strong>pumping length</strong>,
@@ -975,7 +975,7 @@ F -> ( E ) | id</textarea>
         <li>\(|y| \geq 1\)</li>
         <li>For every integer \(i \geq 0\), \(xy^iz \in L\)</li>
     </ol>
-                <br><em>Goal: Prove $L$ is NOT regular by finding a contradiction!</em>
+                <br><em>Goal: Prove L is NOT regular by finding a contradiction!</em>
               </p>
             </div>
           </div>
@@ -988,11 +988,11 @@ F -> ( E ) | id</textarea>
             </div>
             <div class="game-step-box" id="pumping-step-2">
               <div class="step-num-badge">Step 2</div>
-              <h4>Adversary Chooses $p$</h4>
+              <h4>Adversary Chooses p</h4>
               <div class="p-choice-row">
-                <label>Pumping length $p$:</label>
+                <label>Pumping length p:</label>
                 <input type="number" id="pumping-p-val" value="3" min="1" max="10" class="num-input" />
-                <button id="btn-confirm-p" class="btn btn-sm btn-secondary">Set $p$</button>
+                <button id="btn-confirm-p" class="btn btn-sm btn-secondary">Set p</button>
               </div>
             </div>
             <div class="game-step-box" id="pumping-step-3">
@@ -1000,7 +1000,7 @@ F -> ( E ) | id</textarea>
               <h4>You Choose String $s \in L$ ($|s| \ge p$)</h4>
               <div class="input-inline-bar">
                 <input type="text" id="pumping-string-s" class="code-input" value="000111" />
-                <button id="btn-confirm-s" class="btn btn-sm btn-primary">Select $s$</button>
+                <button id="btn-confirm-s" class="btn btn-sm btn-primary">Select s</button>
               </div>
             </div>
             <div class="game-step-box" id="pumping-step-4">
@@ -1023,7 +1023,6 @@ F -> ( E ) | id</textarea>
             </div>
           </div>
         </div>
-          </script>
       </section>
 
       <!-- TAB 8: L-SYSTEMS -->
